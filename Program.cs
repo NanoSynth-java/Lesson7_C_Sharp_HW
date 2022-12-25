@@ -31,20 +31,28 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-int stroka = 4;
-int stolb = 4;
-int sum = 0;
-int[,] myArray = new int[stroka, stolb];
-Random rand = new Random();
-for (int j = 0; j < stroka; j++)
-{
-    for (int i = 0; i < stolb; i++)
-    {
-        myArray[i, j] = rand.Next(1, 10);
-        sum = sum + myArray[i,j];
-        Console.Write("{0}\t", myArray[i, j]);
-    }
-    Console.WriteLine();
-    Console.WriteLine(String.Format("Summation of {0}th column is {1}", j,sum)); 
-    sum = 0;
-}
+// double rows, cols,sumCol;
+// double resultCol;
+
+// //Initialize matrix a  
+// int[,] a = {
+//     {1, 4, 7, 2},
+//     {5, 9, 2, 3},
+//     {8, 4, 2, 4}
+// };
+
+// //Calculates number of rows and columns present in given matrix  
+// rows = a.GetLength(0);
+// cols = a.GetLength(1);
+
+// //Calculates sum of each column of given matrix  
+// for (int i = 0; i < cols; i++)
+// {
+//     sumCol = 0;
+//     for (int j = 0; j < rows; j++)
+//     {
+//         sumCol = sumCol + a[j, i];
+//     }
+//     resultCol = sumCol / rows;
+//     Console.WriteLine("Sum of " + (i + 1) + " column: " + sumCol + " " + Math.Round(resultCol,1));
+// }
